@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="statistics.css">
+    </head>
+    <script>
+    function showSection(id){
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => section.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    }
+    </script>
+    <body>
+        <header>
+            <a href="index.html"><img src="Media/Star-Wars-Logo.png" alt="Star Wars Logo" class="logo"></a>
+        </header>
+
+        <h1>Star Wars:  A New Hope Statistics</h1>
+
+        <div class="container1">
+            <div class="divisions f">
+                <button onclick="showSection('section1')" class="buttons">Finantial</button>
+            </div>
+
+            <div class="divisions p">
+                <button onclick="showSection('section2')" class=" buttons">Performance</button>
+            </div>
+
+            <div class="divisions r">
+                <button onclick="showSection('section3')" class="buttons">Reviews</button>
+            </div>
+
+            <div class="divisions a">
+                <button onclick="showSection('section4')" class="buttons">Awards</button>
+            </div>
+
+            <div id="section1" class="fsec section active">
+                <h1>Budget: 11 Million USD</h1>
+                <h1>Box Office (Domestic): 461 Million USD</h1>
+                <h1>Box Office (International): 314 Million USD</h1>
+                <h1>Box Office (Worldwide): 775 Million USD</h1>
+            </div>
+
+            <div id="section2" class="psec section">
+                <h1>Number of Theaters Viewed In (Opening): 43</h1>
+                <h1>Number of Theaters Viewed In (Peak): 2,375</h1>
+            </div>
+
+            <div id="section3" class="rsec section">
+                <h1>IMDb Rating: 8.6/10</h1>
+                <h1>Rotten Tomatos Score (Critics): 94%</h1>
+                <h1>Rotton Tomatos Score (Viewers): 96%</h1>
+            </div>
+
+            <div id="section4" class="asec section">
+                <h1>Awards: </h1>
+                <h1>Academy Award For Best Music</h1>
+                <h1>Academy Award For Best Production Design</h1>
+                <h1>Academy Award For Best Costume Design</h1>
+                <h1>Academy Award For Best Sound Mixing</h1>
+                <h1>Academy Award For Best Visual Effects</h1>
+                <h1>Academy Award For Best Film Editing</h1>
+            </div>
+        </div>
+    </body>
+</html>

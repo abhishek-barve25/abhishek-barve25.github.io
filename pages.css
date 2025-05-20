@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+}
+header{
+    text-align: center;
+    background-color: #1E1E1E;
+    padding: 10px 0;
+    position: sticky;
+    top: 0px;
+    border-bottom: 3px solid #FFFFFF;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(Media/Background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color:#FFFFFF;
+}
+/*Star Wars Logo*/
+.logo{
+    width: 150px;
+    max-width: 100%;
+}
+
+/*Item 1 Container 1*/
+.container1{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding: 20px;
+}
+    /*Item 1 Picture 1*/
+    .item1P1{
+        max-width:300px;
+        height: auto;
+    }
+    .item1P1 img{
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+        border: 2.5px solid #FFFFFF;
+    }
+    /*Item 1 Text 1*/
+    .item1T1{
+        font-size: 18px;
+        padding: 10px;
+        max-width: 400px;
+    }
+
+        /*Item 1 Container 2*/
+        .item1C2{
+            display: grid;
+            max-width: 600px;
+            grid-template-areas:
+            "header header header"
+            "image mid ."
+            "button1 button1 button2"
+            "bottoms bottoms bottoms";
+            grid-template-columns: 1fr 2fr 5fr;
+            grid-template-rows: 0.1fr 0.1fr 0.5fr 3fr;
+        }
+        /*Item 2 Text 1*/
+        .item2T1{
+            grid-area: header;
+            display: block;
+        }
+        /*Item 2 Picture 1*/
+        .item2P1{
+            grid-area: image;
+        }
+        .item2P1 img{
+            object-fit: contain;
+            width: 50px;
+            height: 50px;
+        }
+        /*Item 2 Text 2*/
+        .item2T2{
+            grid-area: mid;
+        }
+        /*Item 2 Button 1*/
+        .item2B1{
+            grid-area: button1;
+        }
+        .button1{
+            border: none;
+            background-color: rgb(177, 177, 177);
+            text-align: center;
+            border-radius: 10px;
+            padding: 10px 15px 10px 15px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        /*Item 2 Button 2*/
+        .item2B2{
+            grid-area: button2;
+        }
+        .button2{
+            border: none;
+            background-color: #a6e7ff;
+            text-align: center;
+            border-radius: 10px;
+            padding: 10px 15px 10px 15px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        /*Item 2 Text 3*/
+        .item2T3{
+            grid-area: bottoms;
+        }
