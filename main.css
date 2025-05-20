@@ -1,31 +1,56 @@
+/*Imports the font used in this wesbite (Roboto)*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 header{
+    /*algins the star wars logo to the center*/
     text-align: center;
+    /*changes the background of the header */
     background-color: #1E1E1E;
+    /*adds some space between the top of the page and the logo*/
     padding: 10px 0;
+    /*makes the header stick to the top of the page when scrolling*/
     position: sticky;
+    /*makes the header sit flush with the top of the page*/
     top: 0px;
+    /*creates a 3px solid white line underneatht the header*/
     border-bottom: 3px solid #FFFFFF;
 }
 
 body{
+    /*removes the margins*/
     margin: 0;
+    /*makes the font for the whole body Roboto, with sans-serif as a backup*/
     font-family: 'Roboto', sans-serif;
+    /*sets the image in the background*/
     background-image: url(Media/Background.jpg);
+    /*makes it so that the background does not repeat*/
     background-repeat: no-repeat;
+    /*makes is so that the background never moves, and stays completely static when you scroll*/
     background-attachment: fixed;
+    /*puts the background directly in the center*/
     background-position: center;
+    /*make the background cover the whole of page*/
     background-size: cover;
+    /*make the font color for the whole body white*/
     color:#FFFFFF;
 }
+/*refers directly to the star wars logo image*/
 .logo{
+    /*makes the width of the image 150px*/
     width: 150px;
+    /*makes is so that the star wars logo can get smaller if the page is scaled down, but sets the limit on how large it can get to 150px, which is the full size,
+    therefore, 100%*/
     max-width: 100%;
 }
+/*refers to the h1 element*/
 h1{
+    /*makes the font color of all h1 text white*/
     color: #FFFFFF;
+    /*aligns all h1 text to the center of the page*/
     text-align: center;
+    /*makes the font size of all h1 text 30px*/
     font-size: 30px;
+    /*makes the font of all h1 text Roboto*/
     font-family: 'Roboto';
 }
 
@@ -35,27 +60,42 @@ h1{
     padding: 0;
 }
 
+/*refers to the flexbox container*/
 .container{
+    /*defines the margins of the container*/
     margin: 5% 2% 5% 2%;
+    /*sets flexbox as the layout method*/
     display: flex;
+    /*makes it so that the elements wrap so that the site does not break on smaller screens*/
     flex-wrap: wrap;
+    /*centers the elements in the container */
     justify-content: center;
+    /*creates a 500px gap between the elements in the container*/
     gap: 500px;
+    /*adds a 20px gap between the header and the container*/
     padding: 20px;
 }
-
+/*refers to the elements in the container*/
 .img{
+    /*a shorthand for the attributes, flex-grow, flex-shrink, and flex-basis respectively, makeing the default size of the images 130px
+    and makes them scale up and down by 2*/
     flex: 2 2 130px;
+    /*makes it so that the images cannot grow larger than 400px*/
     max-width: 400px;
 }
-
+/*refers to the images in the elements*/
 .img img {
+    /*makes it so that the images are the same width as the element they are in*/
     width: 100%;
+    /*automatically sets the height of the images based on its original size*/
     height: auto;
+    /*creates a 2.5px solid white border around the images*/
     border: 2.5px solid #FFFFFF;
+    /*makes an animation which moves the image of the space of 0.3 seconds*/
     transition: transform 0.3s ease;
 }
-
+/*refers to the action of hovering the mouse over the images in the elements*/
 .img img:hover {
+    /*makes the images scale up by 1.05 when the mouse is hovering over it*/
     transform: scale(1.05);
 }

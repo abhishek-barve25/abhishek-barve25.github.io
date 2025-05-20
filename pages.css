@@ -1,7 +1,10 @@
+/*All comments are spread through all .css files*/
+/*Imports the font used in this wesbite (Roboto)*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     box-sizing: border-box;
 }
+/*commented on in Main.css*/
 header{
     text-align: center;
     background-color: #1E1E1E;
@@ -10,7 +13,7 @@ header{
     top: 0px;
     border-bottom: 3px solid #FFFFFF;
 }
-
+/*commented on in Main.css*/
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -21,98 +24,148 @@ body{
     background-size: cover;
     color:#FFFFFF;
 }
-/*Star Wars Logo*/
+/*commented on in Main.css*/
 .logo{
     width: 150px;
     max-width: 100%;
 }
 
-/*Item 1 Container 1*/
+/*refers to the flexbox container*/
 .container1{
+    /*sets flexbox as the layout method*/
     display: flex;
+    /*centers the elements in the container*/
     justify-content: center;
+    /*creates a gap which scales based on the size of the page on different screen sizes*/
     gap: 10%;
+    /*creates a 20px gap between the container and the header*/
     padding: 20px;
 }
-    /*Item 1 Picture 1*/
+    /*refers to the item which contains the poster*/
     .item1P1{
+        /*sets the max width the item can be to 300px*/
         max-width:300px;
+        /*automatically sets the height based on the original size of the image*/
         height: auto;
     }
+    /*refers to the poster inside the item*/
     .item1P1 img{
+        /*makes the image fit exactly within the edges of the item it is inside*/
         object-fit: contain;
+        /*sets the width to the exact same as the item*/
         width: 100%;
+        /*automatically sets the height baesd on the orginal size of the image*/
         height: auto;
+        /*makes  2.5px solid white border around the image*/
         border: 2.5px solid #FFFFFF;
     }
-    /*Item 1 Text 1*/
+    /*refers to the item which contains the general statistics*/
     .item1T1{
+        /*sets the font size to 18px*/
         font-size: 18px;
+        /*makes a 10px gap at the top*/
         padding: 10px;
+        /*makes the max width of the item 400px, allowing it to scale based on screen size*/
         max-width: 400px;
     }
 
-        /*Item 1 Container 2*/
+        /*refers to a container within the other container*/
         .item1C2{
+            /*sets grid as the layout method*/
             display: grid;
+            /*makes the max width of the container 600px, allowing it to scale based on screen size*/
             max-width: 600px;
+            /*sets the template areas based on the 4x3 grid*/
             grid-template-areas:
             "header header header"
             "image mid ."
             "button1 button1 button2"
             "bottoms bottoms bottoms";
+            /*sets the sizes of the grids columns using fractional values*/
             grid-template-columns: 1fr 2fr 5fr;
+            /*sets the sizes of the grids rows using fractional values*/
             grid-template-rows: 0.1fr 0.1fr 0.5fr 3fr;
         }
-        /*Item 2 Text 1*/
+        /*refers to the item which contains the title of the page*/
         .item2T1{
+            /*sets the area the title inhabits to the "header" template area*/
             grid-area: header;
+            /*sets block as the layout method*/
             display: block;
         }
-        /*Item 2 Picture 1*/
+        /*item which contains the Parental Guidence Logo*/
         .item2P1{
+            /*sets the area the logo inhabits to the "image" template area*/
             grid-area: image;
         }
+        /*refers to the Parental Guidence Logo in the item*/
         .item2P1 img{
+            /*makes the image fit exactly within the edges of the item it is inside*/
             object-fit: contain;
+            /*sets the width of the image to 50px*/
             width: 50px;
+            /*sets the height of the image to 50px*/
             height: 50px;
         }
-        /*Item 2 Text 2*/
+        /*refers to the item which containers the run time text*/
         .item2T2{
+            /*set the area the text inhabits to the "mid" template area*/
             grid-area: mid;
         }
-        /*Item 2 Button 1*/
+        /*refers to the item which contains the first button*/
         .item2B1{
+            /*sets the area the button inhabits to the "button1" template area*/
             grid-area: button1;
         }
+        /*refers to the first button*/
         .button1{
+            /*removes the border from the buttons*/
             border: none;
+            /*sets the background color*/
             background-color: rgb(177, 177, 177);
+            /*aligns the text to the center of the button*/
             text-align: center;
+            /*makes the radius of the corners of the borders 10px*/
             border-radius: 10px;
+            /*adds a 10px gap to the top and bottom and a 15px gap to the sides*/
             padding: 10px 15px 10px 15px;
+            /*removes any text decoration*/
             text-decoration: none;
+            /*sets inline-block as the layout method*/
             display: inline-block;
+            /*sets the font size to 16px*/
             font-size: 16px;
+            /*makes it so that the cursor changes to a pointer when hovering over the button*/
             cursor: pointer;
         }
-        /*Item 2 Button 2*/
+        /*refers to the item which contains the second button*/
         .item2B2{
+            /*sets the area the button inhabits to the "button2" template area*/
             grid-area: button2;
         }
+        /*refers to the second button*/
         .button2{
+            /*removes the border from the buttons*/
             border: none;
+            /*sets the backgrond color*/
             background-color: #a6e7ff;
+            /*aligns the text tot he center of the button*/
             text-align: center;
+            /*makes the radius of the corners of the borders 10px*/
             border-radius: 10px;
+            /*adds a 10px gap to the top and bottom and a 15px gap to the sides*/
             padding: 10px 15px 10px 15px;
+            /*removes any text decoration*/
             text-decoration: none;
+            /*sets inline-block as the layout method*/
             display: inline-block;
+            /*sets the font size to 16px*/
             font-size: 16px;
+            /*makes it so that the cursor changes to a pointer when hovering over the button*/
             cursor: pointer;
         }
-        /*Item 2 Text 3*/
+        /*refers to the container which holds the movie synopsis*/
         .item2T3{
+            /*sets the area the synopsis inhabits to the "button2" template area*/
             grid-area: bottoms;
         }

@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html>
+    <!--Attempts to scale the websites elements to work on smaller devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--links the html to the css (pages.css file)-->
     <link rel="stylesheet" href="pages.css">
     <body>
-
+        <!--Makes whatever is between the tags go to the top of the page to become the header-->
         <header>
+            <!--the star wars logo in the header, as well as a link to the index.html-->
             <a href="index.html"><img src="Media/Star-Wars-Logo.png" alt="Logo" class="logo"></a>
         </header>
-
+        <!--A "container" which holds all the elements to be put in the Grid Layout Manager-->
         <div class="container1">
-
+            <!--The Poster for the movie-->
             <div class="item1P1">
                 <img src="Media/Revenge Of The Sith.webp" alt="Revenge Of The Sith Poster">
             </div>
-
+            <!--A second "container" within the first one-->
             <div class="item1C2">
+                <!--Title of the page-->
                 <div class="item2T1">
                     <h1>Star Wars: Revenge Of The Sith</h1>
                 </div>
-
+                <!--The Logo for the Parental Guidence Rating-->
                 <div class="item2P1">
                     <img src="Media/PG Logo.png" alt="PG Logo">
                 </div>
-
+                <!--The movies length-->
                 <div class="item2T2">
                     <h3>2h 20m</h3>
                 </div>
-
+                <!--A button which redirects to the Where To Watch page (intentionally disfunctional)-->
                 <div class="item2B1">
                     <button type="button" class="button1">Where To Watch</button>
                 </div>
-
+                <!--A button which redirects the user to the stats page for this movie with the use of the onclick function-->
                 <div class="item2B2">
                     <button onclick="location.href='ROTSStats.html'" class="button2">Statistics</button>
                 </div>
-
+                <!--The discription for the movie-->
                 <div class="item2T3">
                     <h4>It has been three years since the Clone Wars began. Jedi Master Obi-Wan Kenobi and Jedi Knight Anakin Skywalker rescue Chancellor Palpatine from General Grievous, the commander of the droid armies, but Grievous escapes. Suspicions are raised within the Jedi Council concerning Chancellor Palpatine, with whom Anakin has formed a bond. Asked to spy on the chancellor, and full of bitterness toward the Jedi Council, Anakin embraces the Dark Side.</h4>
                 </div>
             </div>
-
+            <!--General Statistics in an unordered list-->
             <div class="item1T1">
                 <ul>
                     <li>Aired: 19 May 2005</li>

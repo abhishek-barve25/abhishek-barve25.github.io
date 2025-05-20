@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!--links the html to the css (statistics.css)-->
         <link rel="stylesheet" href="statistics.css">
     </head>
+    <!--A script written in javascript that creates the function which is used in the 4 buttons below-->
     <script>
     function showSection(id){
     const sections = document.querySelectorAll('.section');
@@ -11,47 +13,50 @@
     }
     </script>
     <body>
+        <!--Makes whatever is between the tags go to the top of the page to become the header-->
         <header>
-            <a href="index.html"><img src="Media/Star-Wars-Logo.png" alt="Star Wars Logo" class="logo"></a>
+            <!--the star wars logo in the header, as well as a link to go back to its corrisponding page-->
+            <a href="TheLastJedi.html"><img src="Media/Star-Wars-Logo.png" alt="Star Wars Logo" class="logo"></a>
         </header>
-
+        <!--Title of the page-->
         <h1>Star Wars: The Last Jedi Statistics</h1>
-
+        <!--A "container" which holds all the elements to be put in the Grid Layout Manager-->
         <div class="container1">
+            <!--a buttom which, when clicked, shows the section with the id specified in the function-->
             <div class="divisions f">
                 <button onclick="showSection('section1')" class="buttons">Finantial</button>
             </div>
-
+            <!--a buttom which, when clicked, shows the section with the id specified in the function-->
             <div class="divisions p">
                 <button onclick="showSection('section2')" class=" buttons">Performance</button>
             </div>
-
+            <!--a buttom which, when clicked, shows the section with the id specified in the function-->
             <div class="divisions r">
                 <button onclick="showSection('section3')" class="buttons">Reviews</button>
             </div>
-
+            <!--a buttom which, when clicked, shows the section with the id specified in the function-->
             <div class="divisions a">
                 <button onclick="showSection('section4')" class="buttons">Awards</button>
             </div>
-
+            <!--A division which defines what text is in the section in the id-->
             <div id="section1" class="fsec section active">
                 <h1>Budget: 262 Million USD</h1>
                 <h1>Box Office (Domestic): 620 Million USD</h1>
                 <h1>Box Office (International): 702 Million USD</h1>
                 <h1>Box Office (Worldwide): 1.323 Billion USD</h1>
             </div>
-
+            <!--A division which defines what text is in the section in the id-->
             <div id="section2" class="psec section">
                 <h1>Number of Theaters Viewed In (Opening): 4,232</h1>
                 <h1>Number of Theaters Viewed In (Peak): 4,232</h1>
             </div>
-
+            <!--A division which defines what text is in the section in the id-->
             <div id="section3" class="rsec section">
                 <h1>IMDb Rating: 6.9/10</h1>
                 <h1>Rotten Tomatos Score (Critics): 91%</h1>
                 <h1>Rotton Tomatos Score (Viewers): 41%</h1>
             </div>
-
+            <!--A division which defines what text is in the section in the id-->
             <div id="section4" class="asec section">
                 <h1>Awards: </h1>
                 <h1>Empire Award For Best Film</h1>

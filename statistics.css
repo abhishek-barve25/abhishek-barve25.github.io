@@ -1,10 +1,14 @@
+/*All comments are spread through all .css files*/
+/*Imports the font used in this wesbite (Roboto)*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     box-sizing: border-box;
 }
+
 h1{
     text-align: center;
 }
+/*commented on in Main.css*/
 header{
     text-align: center;
     background-color: #1E1E1E;
@@ -13,7 +17,7 @@ header{
     top: 0px;
     border-bottom: 3px solid #FFFFFF;
 }
-
+/*commented on in Main.css*/
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -24,62 +28,90 @@ body{
     background-size: cover;
     color:#FFFFFF;
 }
-/*Star Wars Logo*/
+/*commented on in Main.css*/
 .logo{
     width: 150px;
     max-width: 100%;
 }
-
+/*refers to the grid container*/
 .container1{
+    /*sets grid as the layout method*/
     display: grid;
+    /*sets the size of the grids columns using fractional values*/
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*sets the size of the grids rows using fractional values*/
     grid-template-rows: 75px 2fr;
+    /*sets the template areas based on the 2x4 grid*/
     grid-template-areas: 
     "buttonf buttonp buttonr buttona"
     "stats stats stats stats";
+    /*creates a 20px gap between the container and the header*/
     margin-top: 20px;
+    /*makes the background colour of the container*/
     background-color: #1E1E1E;
 }
-
+/*refers to the active state of all elements*/
 .active{
+    /*sets block as the layout method*/
     display: block;
 }
-
+/*refers to the active state of the sections*/
 .section.active {
+    /*sets block as the layout method when active is true*/
     display: block;
+    /*sets the opacity to 1 when when active is true*/
     opacity: 1;
 }
-
+/*refers to the elements with the section class*/
 .section{
+    /*removes the layout method*/
     display: none;
+    /*sets the area the element inhabits to the "stats" template area*/
     grid-area: stats;
+    /*aligns the text in the element to the center*/
     text-align: center;
 }
-
+/*refers to the items in the container*/
 .divisions{
+    /*aligns all text to the center*/
     text-align: center;
 }
-
+/*refers to the buttons in the elements*/
 .buttons{
+    /*sets the width to the same as the grid area it is in*/
     width: 100%;
+    /*sets the height to the same as the grid area it is in*/
     height: 100%;
+    /*removes curved corners*/
     border-radius: 0;
+    /*sets the background color of the buttons*/
     background-color: #1E1E1E;
+    /*sets the font of the text in the button to Roboto, with Courier New as a backup*/
     font-family: 'Roboto', 'Courier New', Courier, monospace;
+    /*sets the colour of the text in the buttons*/
     color: #FFFFFF;
+    /*sets the max height of the buttons to 100px*/
     max-height: 100px;
+    /*makes it so that when the cursor changes into a pointer when it hovers over the button*/
     cursor: pointer;
 }
-
+/*refers to an individual button*/
 .f{
+    /*sets the area the button inhabits to the "buttonf" template area*/
     grid-area: buttonf;
 }
+/*refers to an individual button*/
 .p{
+    /*sets the area the button inhabits to the "buttonp" template area*/
     grid-area: buttonp;
 }
+/*refers to an individual button*/
 .r{
+    /*sets the area the button inhabits to the "buttonr" template area*/
     grid-area: buttonr;
 }
+/*refers to an individual button*/
 .a{
+    /*sets the area the button inhabits to the "buttona template area*/
     grid-area: buttona;
 }
